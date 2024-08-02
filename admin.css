@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.admin_dashboard{
+    padding: 1rem;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.admin_dashboard .admin_heading{
+    color: #C1121F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.admin_box_container .admin_box{
+    margin: 1rem;
+    background-color: white;
+    width: 20%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
+}
+
+.admin_box_container .admin_box:hover{
+    box-shadow: 2px 2px 12px rgb(65, 65, 65);
+}
+
+.admin_box_container .admin_box h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.admin_box_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin_add_products{
+    margin-top: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_add_products form{
+    background-color: white;
+    width: 35%;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_add_products form h3{
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.admin_input{
+    margin: 1.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.admin_input:focus{
+    outline: none;
+    box-shadow: 2px 2px 10px rgb(107, 107, 107);
+}
+.admin_add_products form input[type="submit"]{
+    background-color: #C1121F;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.show_products{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.show_products .product_box_cont{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.show_products .product_box_cont .product_box{
+    background-color: white;
+    padding: 1.5rem;
+    width: 25%;
+    height: 450px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 15px gray;
+}
+
+.show_products .product_box_cont .product_box img{
+    height: 60%;
+    border-radius: 20px;
+}
+
+.show_products .product_box_cont .product_box .product_name{
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.show_products .product_box_cont .product_box .product_price{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+
+.edit_product_form{
+    background-color: rgb(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+      
+.edit_product_form form{
+    width: 40rem;
+    height: 80%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: white;
+}
+
+.edit_product_form form img{
+    height: 13rem;
+}
+
+.edit_product_form form .update_box{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.admin_orders{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin_orders h1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.admin_orders .admin_box_container .admin_box form input,
+.admin_orders .admin_box_container .admin_box form select,
+.admin_orders .admin_box_container .admin_box form a{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.delete-btn{
+    background-color: #C1121F;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.option-btn{
+    background-color: greenyellow;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.admin_box_container .admin_box p{
+    font-weight: 900;
+}
+
+ .admin_box_container .admin_box span{
+    color: #C1121F;
+}
+
+.admin_orders .admin_box_container .admin_box,
+.admin_messages .admin_box_container .admin_box{
+    width: 40%;
+}
+
+.admin_orders .admin_box_container,
+.admin_messages .admin_box_container{
+    align-items: center;
+    justify-content: center;
+ }
+
+ .admin_users,
+ .admin_messages{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .admin_users a,
+ .admin_messages a{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+ }

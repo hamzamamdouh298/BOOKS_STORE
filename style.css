@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.message{
+    background-color: antiquewhite;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message span{
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.message i{
+    cursor: pointer;
+    color: #C1121F;
+    font-size: 1rem;
+}
+
+.message i:hover{
+    transform: rotate(90deg);
+}
+
+/* Admin Page */
+.admin_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* background-color: #ee6055; */
+    box-shadow: 2px 2px 10px rgb(165, 165, 165);
+    box-sizing: border-box;
+}
+
+.header_navigation{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header_logo{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.header_navigation a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_logo span{
+    color: #C1121F;
+}
+
+.header_navigation .header_navbar{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    transform: translate(1rem);
+    transition: .2s;
+}
+
+.header_navigation .header_navbar a{
+    background-color: white;
+    box-shadow: 2px 2px 8px rgb(165, 165, 165);
+    padding: 0.2rem 1rem;
+    margin: 0 1rem;
+    color: #000;
+    border-radius: 10px;
+}
+
+.header_navigation .header_navbar a:hover{
+    color: white;
+    background-color: #C1121F;
+    box-shadow: 2px 2px 11px rgb(165, 165, 165);
+}
+
+.header_navigation .header_icons div{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.header_navigation .header_icons div:hover{
+    color: #C1121F;
+}
+
+.header_acc_box{
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: .5rem;
+    /* height: 100px */
+    /* width: 20rem; */
+    padding: 1rem;
+    /* text-align: center; */
+    display: none;
+    animation: fadeIn .2s linear;
+    color: #000;
+}
+
+@keyframes fadeIn {
+0%{
+    transform: translate(1rem);
+    opacity: 0.2;
+}
+}
+
+#menu_btn{
+    display: none;
+}
+
+.header_acc_box p{
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.header_acc_box p span{
+    color: #C1121F;
+}
+
+.header_acc_box .delete-btn{
+    background-color: #C1121F;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    text-decoration: none;
+
+}
+.header_acc_box .delete-btn:hover{
+    background-color: #000;
+    color: white;
+}
+
+.header_acc_box.active{
+    display: inline-block;
+    background-color: white;
+    z-index: 1000;
+}
+
+.empty{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    color: #C1121F;
+    font-size: 2rem;
+}
+
+
+.product_btn{
+    background-color: #C1121F;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+
+.product_btn:hover{
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.product_del_btn{
+    background-color: #C1121F;
+}
+
+/* home page */
+
+.user_header .header_1{
+    position: relative;
+    background-color: #003049;
+    /* color: white; */
+    box-shadow: 2px 2px 10px rgb(34, 34, 34);
+}
+
+.user_header .header_1.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+}
+
+.user_flex{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+
+}
+
+.logo_cont{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.logo_cont img{
+    width: 40%;
+}
+
+.book_logo{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.user_flex .navbar{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.user_flex .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.user_flex .navbar a:hover::after{
+    content: "";
+    display: block;
+    width: 35px;
+    border-bottom: 2px solid #669bbc;
+}
+
+.user_flex .navbar a:hover{
+    color: #669bbc;
+}
+
+.header_1 .user_flex .last_part{
+    display: flex;
+    gap: 1rem;
+}
+
+.last_part .loginorreg,
+.icons{
+    font-size: 1.2rem;
+}
+
+.last_part .loginorreg a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.last_part .loginorreg a:hover{
+    text-decoration: underline;
+    color: #669bbc;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons a{
+    color: white;
+    text-decoration: none;
+}
+
+.icons > *:hover{
+    color: #669bbc;
+}
+
+.icons #user_menu_btn{
+    display: none;
+}
+
+.footer{
+    background-color: #003049;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.footer_box_container{
+    width: 90%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.footer_box{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25%;
+}
+
+.footer_box h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.footer_box p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+.footer_box a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    margin-top: 0.5rem;
+}
+
+.footer_box a:hover::after{
+    content: "";
+    display: block;
+    width: 35px;
+    border-bottom: 2px solid #669bbc;
+}
+
+.footer_logo_cont{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    
+}
+.footer_logo_cont a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.footer_logo_cont img{
+    width: 10%;
+}
+.footer_box .footer_logo_cont a:hover::after{
+    display: none;
+}
+
+.disabled{
+    pointer-events: none;
+   opacity: .5;
+   user-select: none;
+}
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .admin_add_products form{
+        width: 50%;
+    }
+    .show_products .product_box_cont .product_box{
+        width: 40%;
+        height: 300px;
+    }
+    .show_products .product_box_cont .product_box img{
+        height: 70%;
+    }
+    .admin_orders,
+    .admin_messages,
+    .admin_users{
+        margin-top: 15%;
+     }
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 50%;
+    }
+    #menu_btn{
+        display: inline-block;
+    }
+
+    .header_navigation .header_navbar{
+        position: absolute;
+        top: 99%;
+        /* left: 0; */
+        right: 0;
+        width: 40%;
+        background-color: white;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    .header_navigation .header_navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+
+    .header_navigation .header_navbar a{
+        margin: 2rem;
+        display: block;
+    }
+
+    .admin_dashboard{
+        margin-top: 25%;
+    }
+    .admin_box_container .admin_box{
+        width: 40%;
+    }
+    .admin_add_products{
+        margin-top: 25%;
+    }
+    .admin_add_products form{
+        width: 80%;
+    }
+    .show_products .product_box_cont{
+        flex-direction: row;
+    }
+    .show_products .product_box_cont .product_box{
+        width: 80%;
+        height: 300px;
+    }
+    .admin_orders .admin_box_container .admin_box,
+    .admin_messages .admin_box_container .admin_box{
+        width: 80%;
+    }
+    .user_header .header_1 .user_flex .navbar{
+        position: absolute;
+        top: 99%;
+        right: 0;
+        width: 40%;
+        background-color: white;
+        flex-direction: column;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    .user_header .header_1 .user_flex .navbar a{
+        margin: 1rem;
+        color: #000;
+    }
+    .user_header .header_1 .user_flex .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    .icons #user_menu_btn{
+        display: block;
+    }
+    .user_flex .logo_cont{
+        margin-left: 1rem;
+    }
+    .footer_box_container{
+        width: 100%;
+    }
+    .footer_box{
+        width: 30%;
+    }
+    
+}
